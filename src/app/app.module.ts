@@ -6,6 +6,7 @@ import { MutualfundsComponent } from './mutualfunds/mutualfunds.component';
 import  { StocksComponent } from './stocks.component';
 import { StockDirectiveDirective } from './stock-directive.directive';
 import {HighlightDirective} from  './highlight.directive';
+import {StockService} from './stock.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import {HighlightDirective} from  './highlight.directive';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [StockService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
